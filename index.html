@@ -5,7 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: .project/markers/targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc:project/markers/targets.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <!-- Camera -->
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       
@@ -13,7 +13,7 @@
       <a-entity mindar-image-target="targetIndex: 0">
         <!-- Video -->
         <a-video
-          src=" ./project/video.mp4"
+          src="#video"
           position="0 0 0"
           width="1"
           height="0.5625"
@@ -25,7 +25,7 @@
     <!-- Video Element -->
     <video
       id="video"
-      src="video.mp4"
+      src="project/video.mp4"
       autoplay
       loop
       playsinline
